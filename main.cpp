@@ -5,9 +5,9 @@
 #include "notstd.h"
 
 // Classes
-#include "classes/Aeropuerto.h"
-#include "classes/Dia.h"
-#include "classes/Vuelo.h"
+#include "Aeropuerto.h"
+#include "Dia.h"
+#include "Vuelo.h"
 
 // Main function
 int main() {
