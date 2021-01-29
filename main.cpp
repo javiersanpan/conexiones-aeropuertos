@@ -8,11 +8,10 @@
 #include "Aeropuerto.h"
 #include "Dia.h"
 #include "Vuelo.h"
+#include "Horario.h"
 
 // Main function
 int main() {
-
-  cout << "Hello world" << endl;
 
   return 0;
 }
