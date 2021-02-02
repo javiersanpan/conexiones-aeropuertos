@@ -10,4 +10,4 @@ add_executable(conexiones_aeropuertos
         conexiones-aeropuertos.xcodeproj/xcuserdata/javier.xcuserdatad/xcschemes/xcschememanagement.plist
         conexiones-aeropuertos.xcodeproj/project.pbxproj
         main.cpp
-        readme.md)
+        readme.md Aeropuerto.h Horario.h)

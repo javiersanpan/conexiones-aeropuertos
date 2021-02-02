@@ -80,6 +80,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/javier/Desktop/conexiones-aeropuertos/Aeropuerto.h">
+			<Option target="conexiones_aeropuertos"/>
+		</Unit>
+		<Unit filename="/Users/javier/Desktop/conexiones-aeropuertos/Horario.h">
+			<Option target="conexiones_aeropuertos"/>
+		</Unit>
 		<Unit filename="/Users/javier/Desktop/conexiones-aeropuertos/conexiones-aeropuertos.xcodeproj/project.pbxproj">
 			<Option target="conexiones_aeropuertos"/>
 		</Unit>
