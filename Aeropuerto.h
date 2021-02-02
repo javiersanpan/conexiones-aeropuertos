@@ -7,7 +7,7 @@
 
 class Aeropuerto {
 private:
-    Horario slots[50];
+    // Horario slots[50];
 public:
 };
 

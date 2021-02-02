@@ -6,7 +6,19 @@
 
 #IncludeRegexTransform: 
 
+/Users/javier/Desktop/conexiones-aeropuertos/Aeropuerto.h
+
+/Users/javier/Desktop/conexiones-aeropuertos/Horario.h
+
+/Users/javier/Desktop/conexiones-aeropuertos/Vuelo.h
+
 /Users/javier/Desktop/conexiones-aeropuertos/main.cpp
 iostream
 -
+Aeropuerto.h
+/Users/javier/Desktop/conexiones-aeropuertos/Aeropuerto.h
+Horario.h
+/Users/javier/Desktop/conexiones-aeropuertos/Horario.h
+Vuelo.h
+/Users/javier/Desktop/conexiones-aeropuertos/Vuelo.h
 
