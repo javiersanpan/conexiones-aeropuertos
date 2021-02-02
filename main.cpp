@@ -10,7 +10,10 @@ using std::string;
 #include "Vuelo.h"
 
 int main() {
+
+    // Se le da las opciones al usuario
     char option;
+    int confirma;
 
     do {
 
@@ -23,20 +26,33 @@ int main() {
         switch (option) {
 
             case '1': {
-                cout << "Pronto" << endl;
+                // Esta opción le muestra al usuario cuantos espacios disponibles hay a determinada hora
+                cout << "Ver espacios disponibles" << endl;
                 break;
             }
 
             case '2': {
-                cout << "soon" << endl;
+                // Esta opción le permite al usuario cambiar el horario del vuelo
+                cout << "Cambiar vuelo" << endl;
+                break;
+            }
+
+            case '3': {
+                // Esta opción le permite al usuario reservar un asiento
+                cout << "Reservar asiento" << endl;
+                break;
+            }
+
+            case '4': {
+                // Esta opción le permite al usuario crear un nuevo vuelo
+                cout << "Crear vuelo" << endl;
                 break;
             }
 
             case '5' :{
+                // Salir del programa
                 cout << "Se eliminará toda la información entrada al salir del programa. Si desea continuar digite 5, "
                 << "de lo contrario, digite otro número.";
-
-                int confirma;
 
                 cin >> confirma;
 
@@ -48,6 +64,7 @@ int main() {
             }
 
             default: {
+                // opción inválida
                 cout << "Intente una opción diferente." << endl;
                 break;
             }
