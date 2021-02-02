@@ -5,6 +5,8 @@
 #ifndef CONEXIONES_AEROPUERTOS_HORARIO_H
 #define CONEXIONES_AEROPUERTOS_HORARIO_H
 
+#include "Vuelo.h"
+
 class Horario {
 private:
 public:
