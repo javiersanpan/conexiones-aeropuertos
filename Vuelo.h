@@ -1,4 +1,8 @@
 #ifndef CONEXIONES_AEROPUERTOS_VUELO_H
 #define CONEXIONES_AEROPUERTOS_VUELO_H
 
+class Vuelo{
+    
+};
+
 #endif
