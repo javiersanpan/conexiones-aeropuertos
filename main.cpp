@@ -18,9 +18,11 @@ int main() {
     int confirma;
     int aeropuertoActual = 0;
     int vueloActual = 0;
+    int boletoActual = 0;
 
     Aeropuerto listaAeropuertos[5];
     Vuelo listaVuelos[50];
+    Boleto listaBoletos[500];
 
     do {
 
@@ -152,6 +154,42 @@ int main() {
             case '3': {
                 // Esta opción le permite al usuario reservar un asiento
                 cout << "Reservar asiento" << endl;
+
+                int nReservarVuelo;
+
+                cout << "Ingrese el código del vuelo que se va a reservar: ";
+                cin >> nReservarVuelo;
+
+                if (nReservarVuelo >= vueloActual) {
+                    cout << "Ese vuelo no existe, asegurate de usar el código que se proporcionó cuando se creó el aeropuerto";
+                    break;
+                }
+
+                if (listaVuelos[nReservarVuelo].getAsientosDisponibles() <= 0) {
+                    cout << "Lo siento, ya no hay asientos disponibles en este vuelo.";
+                    break;
+                }
+
+                listaVuelos[nReservarVuelo].reservarAsientos(1);
+
+                string nameofpas;
+                cout << "¿Cúal es el nombre del pasajero?: ";
+                cin >> nameofpas;
+                listaBoletos[boletoActual].setPasajero(nameofpas);
+
+                string laclassavoler;
+                cout << "¿En qué clase le gustaría volar?: ";
+                cin >> laclassavoler;
+                listaBoletos[boletoActual].setclase(laclassavoler);
+
+                listaBoletos[boletoActual].setVuelo(listaVuelos[nReservarVuelo]);
+
+                cout << "Se ha registrado el boleto a nombre de " << listaBoletos[boletoActual].getPasajero()
+                << " en clase " << listaBoletos[boletoActual].getclase() << " para el vuelo " <<
+                listaBoletos[boletoActual].getvuelo().getNVuelo() << " con destino a " <<
+                listaBoletos[boletoActual].getvuelo().getDestino() << endl;
+
+                boletoActual++;
                 break;
             }
 
