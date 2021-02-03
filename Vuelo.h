@@ -1,30 +1,13 @@
-#ifndef Aeropuerto_H
-#define Aeropuerto_H
+//
+// Created by Javier on 02/02/21.
+//
 
-class Vuelo {
+#ifndef CONEXIONES_AEROPUERTOS_VUELO_H
+#define CONEXIONES_AEROPUERTOS_VUELO_H
 
-private:
-// Atributos
-  string numDeVuelo;
-  string aeropuertoSalida;
-  string aeropuertoDestino;
+class Vuelo{
+    std::string numeroVuelo;
 
-public:
-
-// Constructores
-  Vuelo();
-  Vuelo(string nv, string as, string ad);
-
-// Setters y getters
-  void setNumDeVuelo(string nv);
-  void setAeropuertoSalida(string as);
-  void setAeropuertoDestino(string ad);
-
-  string getNumDeVuelo();
-  string getAeropuertoSalida();
-  string getAeropuertoDestino();
-
-// Otros métodos
 };
 
-#endif
+#endif //CONEXIONES_AEROPUERTOS_VUELO_H

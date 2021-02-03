@@ -1,1 +1,5 @@
 .DS_store
+conexiones-aeropuertos.xcodeproj
+CMakeLists.txt
+cmake-build-debug/
+.idea/

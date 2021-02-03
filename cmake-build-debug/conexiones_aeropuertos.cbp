@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="conexiones_aeropuertos"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/javier/Desktop/conexiones-aeropuertos/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/javier/Desktop/conexiones-aeropuertos/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/javier/Desktop/conexiones-aeropuertos/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/javier/Desktop/conexiones-aeropuertos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/javier/Desktop/conexiones-aeropuertos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/javier/Desktop/conexiones-aeropuertos/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/javier/Desktop/conexiones-aeropuertos/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/javier/Desktop/conexiones-aeropuertos/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/javier/Desktop/conexiones-aeropuertos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/javier/Desktop/conexiones-aeropuertos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/javier/Desktop/conexiones-aeropuertos/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/javier/Desktop/conexiones-aeropuertos/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/javier/Desktop/conexiones-aeropuertos/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/javier/Desktop/conexiones-aeropuertos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/javier/Desktop/conexiones-aeropuertos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="conexiones_aeropuertos">
+				<Option output="/Users/javier/Desktop/conexiones-aeropuertos/cmake-build-debug/conexiones_aeropuertos" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/javier/Desktop/conexiones-aeropuertos/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/javier/Desktop/conexiones-aeropuertos/cmake-build-debug/Makefile&quot;  VERBOSE=1 conexiones_aeropuertos"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/javier/Desktop/conexiones-aeropuertos/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/javier/Desktop/conexiones-aeropuertos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/javier/Desktop/conexiones-aeropuertos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="conexiones_aeropuertos/fast">
+				<Option output="/Users/javier/Desktop/conexiones-aeropuertos/cmake-build-debug/conexiones_aeropuertos" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/javier/Desktop/conexiones-aeropuertos/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/javier/Desktop/conexiones-aeropuertos/cmake-build-debug/Makefile&quot;  VERBOSE=1 conexiones_aeropuertos/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/javier/Desktop/conexiones-aeropuertos/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/javier/Desktop/conexiones-aeropuertos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/javier/Desktop/conexiones-aeropuertos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/javier/Desktop/conexiones-aeropuertos/Aeropuerto.h">
+			<Option target="conexiones_aeropuertos"/>
+		</Unit>
+		<Unit filename="/Users/javier/Desktop/conexiones-aeropuertos/Horario.h">
+			<Option target="conexiones_aeropuertos"/>
+		</Unit>
+		<Unit filename="/Users/javier/Desktop/conexiones-aeropuertos/Vuelo.h">
+			<Option target="conexiones_aeropuertos"/>
+		</Unit>
+		<Unit filename="/Users/javier/Desktop/conexiones-aeropuertos/conexiones-aeropuertos.xcodeproj/project.pbxproj">
+			<Option target="conexiones_aeropuertos"/>
+		</Unit>
+		<Unit filename="/Users/javier/Desktop/conexiones-aeropuertos/conexiones-aeropuertos.xcodeproj/project.xcworkspace/contents.xcworkspacedata">
+			<Option target="conexiones_aeropuertos"/>
+		</Unit>
+		<Unit filename="/Users/javier/Desktop/conexiones-aeropuertos/conexiones-aeropuertos.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist">
+			<Option target="conexiones_aeropuertos"/>
+		</Unit>
+		<Unit filename="/Users/javier/Desktop/conexiones-aeropuertos/conexiones-aeropuertos.xcodeproj/project.xcworkspace/xcuserdata/javier.xcuserdatad/UserInterfaceState.xcuserstate">
+			<Option target="conexiones_aeropuertos"/>
+		</Unit>
+		<Unit filename="/Users/javier/Desktop/conexiones-aeropuertos/conexiones-aeropuertos.xcodeproj/xcuserdata/javier.xcuserdatad/xcschemes/xcschememanagement.plist">
+			<Option target="conexiones_aeropuertos"/>
+		</Unit>
+		<Unit filename="/Users/javier/Desktop/conexiones-aeropuertos/main.cpp">
+			<Option target="conexiones_aeropuertos"/>
+		</Unit>
+		<Unit filename="/Users/javier/Desktop/conexiones-aeropuertos/readme.md">
+			<Option target="conexiones_aeropuertos"/>
+		</Unit>
+		<Unit filename="/Users/javier/Desktop/conexiones-aeropuertos/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
