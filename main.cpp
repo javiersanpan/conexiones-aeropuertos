@@ -234,7 +234,80 @@ int main() {
 
             case '4': {
                 // Muestra la información del vuelo seleccionado
-                cout << "Info vuelo" << endl;
+                cout << "Información de un vuelo" << endl;
+
+                int codVuel;
+
+                cout << "Ingrese el código del vuelo que quiere consultar: ";
+                cin >> codVuel;
+
+                if (codVuel >= vueloActual){
+                    cout << "Ese es no es un código de vuelo válido." << endl;
+                    break;
+                }
+
+                char newOptionD;
+
+                cout << "¿Qué desea hacer?" << endl << "1. Ver número de vuelo" << endl << "2. Consultar destino y salida"
+                << endl << "3. Ver hora de salida" << "4. Cambiar nombre y clase de un boleto" << endl
+                << "5. Consultar asientos disponibles" << endl;
+
+                switch (newOptionD) {
+                    case '1':{
+                        cout << "El número de vuelo es " << listaVuelos[codVuel].getNVuelo() << endl;
+                        break;
+                    }
+
+                    case '2':{
+                        cout << "El destino del vuelo es " << listaVuelos[codVuel].getDestino() << ", y sale de "
+                        << listaVuelos[codVuel].getSalida().getubicacion() << endl;
+                        break;
+                    }
+
+                    case '3':{
+                        cout << "El vuelo sale a las " << listaVuelos[codVuel].getHoraSalida() << endl;
+                        break;
+                    }
+
+                    case '4':{
+                        int newCodigoTemp;
+
+                        cout << "Ingrese el código del boelto que quiere cambiar: ";
+                        cin >> newCodigoTemp;
+
+                        if (newCodigoTemp >= boletoActual){
+                            cout << "Ese boleto no existe" << endl;
+                            break;
+                        }
+
+                        string nuevNommm, nuevClassssss;
+
+                        cout << "Nuevo nombre: ";
+                        cin >> nuevNommm;
+
+                        cout << "Nueva clase";
+                        cin >> nuevClassssss;
+
+                        listaBoletos[newCodigoTemp].cambiarNombreYClase(nuevNommm, nuevClassssss);
+
+                        cout << "¡Listo!" << endl;
+
+                        break;
+                    }
+
+                    case '5':{
+                        cout << "Quedan  " << listaVuelos[codVuel].getAsientosDisponibles() << " asientos disponibles."
+                        << endl;
+                        break;
+                    }
+
+
+                    default:{
+                        cout << "Esa no es una opción válida" << endl;
+                        break;
+                    }
+                }
+
                 break;
             }
 

@@ -1,7 +1,7 @@
 #ifndef CONEXIONES_AEROPUERTOS_AEROPUERTO_H
 #define CONEXIONES_AEROPUERTOS_AEROPUERTO_H
 
-class Aeropuerto {
+class Aeropuerto : public error_code {
 private:
     
     // atributos
