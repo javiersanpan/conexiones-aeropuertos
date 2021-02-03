@@ -72,5 +72,4 @@ void Boleto::cambiarNombreYClase(string pasajero, string clase) {
     this->pasajero = pasajero;
 }
 
-
 #endif //CONEXIONES_AEROPUERTOS_BOLETO_H
