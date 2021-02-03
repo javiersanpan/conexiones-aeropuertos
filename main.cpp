@@ -14,6 +14,7 @@ int main() {
     // Se le da las opciones al usuario
     char option;
     int confirma;
+    int aeropuertoActual = 0;
 
     do {
 
@@ -27,7 +28,40 @@ int main() {
 
             case '0': {
                 // Esta opción le muestra al usuario registrar un aeropuerto
-                cout << "Registrar aeropuerto" << endl;
+
+                cout << "Registrar aeropuerto" << endl << "Puede registrar hasta 5 aeropuertos" << endl;
+
+                Aeropuerto listaAeropuertos[10];
+
+                if (aeropuertoActual > 4){
+                    cout << "Lo siento, ha llegado al límite de aeropuertos" << endl;
+                    break;
+                }
+
+                int cap;
+                string nuovoNome, nuovaPositzione;
+
+                cout << "¿Cuál es el nombre del aeropuerto?: ";
+                cin >> nuovoNome;
+
+                cout << "¿En qué ciudad está el aeropuerto?: ";
+                cin >> nuovaPositzione;
+
+                cout << "¿Cuál es la capacidad del aeropuerto?: ";
+                cin >> cap;
+
+                listaAeropuertos[aeropuertoActual].setcapacidad(cap);
+                listaAeropuertos[aeropuertoActual].setespaciosDisponibles(cap);
+                listaAeropuertos[aeropuertoActual].setnombre(nuovoNome);
+                listaAeropuertos[aeropuertoActual].setubicacion(nuovaPositzione);
+
+                cout << "Ha registrado exitosamente el aeropuerto " << listaAeropuertos[aeropuertoActual].getnombre()
+                << ", ubicado en " << listaAeropuertos[aeropuertoActual].getubicacion() <<
+                ". El código de este aeropuerto es: " << aeropuertoActual <<
+                ". Necesitará ese número para interactuar con él." << endl << endl;
+
+                aeropuertoActual++;
+
                 break;
             }
 
