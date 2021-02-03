@@ -1,6 +1,8 @@
 #ifndef CONEXIONES_AEROPUERTOS_VUELO_H
 #define CONEXIONES_AEROPUERTOS_VUELO_H
 
+#include "Aeropuerto.h"
+
 class Vuelo{
 private:
 
@@ -8,7 +10,7 @@ private:
 
     std::string nVuelo;
     std::string destino;
-    std::string salida;
+    Aeropuerto salida;
     std::string horaSalida;
     int asientosDisponibles;
 
@@ -17,13 +19,13 @@ public:
     // constructores
     
     Vuelo();
-    Vuelo(std::string nVuelo, std::string destino, std::string salida, std::string horaSalida, int asientosDisponibles);
+    Vuelo(std::string nVuelo, std::string destino, Aeropuerto salida, std::string horaSalida, int asientosDisponibles);
     
     
     // getters
 
     std::string getNVuelo();
-    std::string getSalida();
+    Aeropuerto getSalida();
     std::string getDestino();
     std::string getHoraSalida();
     int getAsientosDisponibles();
@@ -33,7 +35,7 @@ public:
 
     void setNVuelo(std::string nVuelo);
     void setDestino(std::string destino);
-    void setSalida(std::string salida);
+    void setSalida(Aeropuerto salida);
     void setHoraSalida(std::string horaSalida);
     void setAsientosDisponibles(int asientosDisponibles);
 
@@ -45,15 +47,16 @@ public:
 // constructores
 
 Vuelo::Vuelo() {
+    Aeropuerto n;
     nVuelo = "AAA000";
     destino = "NO";
-    salida = "NO";
+    salida = n;
     horaSalida = "00:00";
     asientosDisponibles = 0;
 }
 
 
-Vuelo::Vuelo(std::string nVuelo, std::string destino, std::string salida, std::string horaSalida,
+Vuelo::Vuelo(std::string nVuelo, std::string destino, Aeropuerto salida, std::string horaSalida,
              int asientosDisponibles) {
     this->nVuelo = nVuelo;
     this->destino = (destino);
@@ -68,7 +71,7 @@ std::string Vuelo::getNVuelo() {
     return std::string();
 }
 
- std::string Vuelo::getSalida()  {
+ Aeropuerto Vuelo::getSalida()  {
     return salida;
 }
 
@@ -94,7 +97,7 @@ void Vuelo::setDestino(std::string destino) {
     this->destino = destino;
 }
 
-void Vuelo::setSalida(std::string salida) {
+void Vuelo::setSalida(Aeropuerto salida) {
     this->salida = salida;
 }
 

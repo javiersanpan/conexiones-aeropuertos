@@ -1,5 +1,5 @@
 # conexiones-aeropuertos
 
-Programa que ayuda con la gestión de aeropuertos. 
+git en: https://github.com/javiersanpan/conexiones-aeropuertos/
 
-La tercera idea sólo maneja el aeropuerto en tiempo real. 
+Programa que ayuda con la gestión de aeropuertos.
