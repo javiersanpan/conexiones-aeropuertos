@@ -68,7 +68,7 @@ Vuelo::Vuelo(std::string nVuelo, std::string destino, Aeropuerto salida, std::st
 // getters
 
 std::string Vuelo::getNVuelo() {
-    return std::string();
+    return nVuelo;
 }
 
  Aeropuerto Vuelo::getSalida()  {

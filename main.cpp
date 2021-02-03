@@ -1,3 +1,4 @@
+#include <__bit_reference>
 // Javier Sánchez Panduro
 // TC1033 Proyecto Integrador
 // Sistema para estar al tanto de la cantidad de aviones actualmente en el aeropuerto
@@ -15,11 +16,17 @@ int main() {
     char option;
     int confirma;
     int aeropuertoActual = 0;
+    int vueloActual = 0;
+
+    Aeropuerto listaAeropuertos[5];
+    Vuelo listaVuelos[50];
 
     do {
 
+        cout << endl;
+
         cout << "Le damos la bienvenida, eliga la opción deseada" << endl << "0. Registrar aeropuerto" << endl
-        <<"1. Registrar vuelo" << endl <<"2. Ver espacios en aeropuerto" << endl << "3. Reservar asiento" << endl
+        <<"1. Registrar vuelo" << endl <<"2. Información de un aeropuerto" << endl << "3. Reservar asiento" << endl
         << "4. Información de un vuelo" << endl << "5. Salir" << endl << "Opción: ";
 
         cin >> option;
@@ -30,8 +37,6 @@ int main() {
                 // Esta opción le muestra al usuario registrar un aeropuerto
 
                 cout << "Registrar aeropuerto" << endl << "Puede registrar hasta 5 aeropuertos" << endl;
-
-                Aeropuerto listaAeropuertos[10];
 
                 if (aeropuertoActual > 4){
                     cout << "Lo siento, ha llegado al límite de aeropuertos" << endl;
@@ -64,17 +69,82 @@ int main() {
 
                 break;
             }
-
-
+            
             case '1': {
                 // Esta opción le muestra al usuario registrar un vuelo
                 cout << "Registar vuelo" << endl;
+
+                if (aeropuertoActual == 0) {
+                    cout << "Necesita crear un aeropuerto antes de poder crear un vuelo." << endl;
+                    break;
+                }
+
+                if (aeropuertoActual > 49) {
+                    cout << "Ha llegado al límite de vuelos permitidos" << endl;
+                }
+
+                string NewnVuelo;
+                string Newdestino;
+                string NewhoraSalida;
+                int NewasientosDisponibles, elCodigoDe;
+                Aeropuerto Newsalida;
+
+                cout << "¿Cuál es el código del aeropuerto de salida?";
+                cin >> elCodigoDe;
+
+                if (elCodigoDe >= aeropuertoActual) {
+                    cout << "Tienes usar el número de aeropuerto proporcionado al momento de crearlo para continuar" << endl;
+                    break;
+                }
+
+                if (listaAeropuertos[elCodigoDe].getespaciosDisponibles() <= 0){
+                    cout << "Este aeropuerto ya no tiene espacios disponibles";
+                    break;
+                }
+                int nuevosEspaciosDisp;
+
+                nuevosEspaciosDisp = listaAeropuertos[elCodigoDe].getespaciosDisponibles();
+
+                nuevosEspaciosDisp = nuevosEspaciosDisp - 1;
+
+                listaAeropuertos[elCodigoDe].setespaciosDisponibles(nuevosEspaciosDisp);
+
+                listaVuelos[vueloActual].setSalida(listaAeropuertos[elCodigoDe]);
+
+                cout << endl << "Se registrará un nuevo vuelo" << endl;
+
+                cout << "¿Cuál es el número de vuelo?: ";
+                cin >> NewnVuelo;
+
+                listaVuelos[vueloActual].setNVuelo(NewnVuelo);
+
+                cout << "¿Cuál es el destino?: ";
+                cin >> Newdestino;
+
+                listaVuelos[vueloActual].setDestino(Newdestino);
+
+                cout << "¿Cuál es la hora de salida?: ";
+                cin >> NewhoraSalida;
+
+                listaVuelos[vueloActual].setHoraSalida(NewhoraSalida);
+
+                cout << "¿Cuántos asientos tiene el avión?: ";
+                cin >> NewasientosDisponibles;
+
+                listaVuelos[vueloActual].setAsientosDisponibles(NewasientosDisponibles);
+
+                cout << "Se registró el vuelo " << listaVuelos[vueloActual].getNVuelo() << ", con destino a "
+                << listaVuelos[vueloActual].getDestino() << ", saliendo de " << listaVuelos[vueloActual].getSalida().getnombre()
+                << " " << listaVuelos[vueloActual].getSalida().getubicacion() << " con el código de vuelo: " << vueloActual;
+
+
+                vueloActual++;
                 break;
             }
 
             case '2': {
-                // Esta opción le permite al usuario ver los espacios que quedan en un Aeropuerto
-                cout << "Ver espacios en aeropuerto" << endl;
+                // Esta opción le permite al usuario ver los espacios que quedan en un Aeropuerto, y otra información.
+                cout << "Información de un aeropuerto" << endl;
                 break;
             }
 
