@@ -148,6 +148,45 @@ int main() {
             case '2': {
                 // Esta opción le permite al usuario ver los espacios que quedan en un Aeropuerto, y otra información.
                 cout << "Información de un aeropuerto" << endl;
+
+                int aerAver;
+
+                cout << "¿Qué aeropuerto quiere consultar? Ingrese el código: ";
+                cin >>aerAver;
+
+                if (aerAver >= aeropuertoActual) {
+                    cout << "Ese aeropuerto no está registrado";
+                    break;
+                }
+
+                char optCon;
+
+                cout << "¿Qué quiere consultar?" << endl << "1. Espacios disponibles" << endl << "2. Ubicación"
+                << endl << "3. Vaciar aeropuerto";
+                cin >> optCon;
+                switch (optCon) {
+                    case '1': {
+                        cout << "En el aeropuerto " << listaAeropuertos[aerAver].getnombre() << " quedan " <<
+                        listaAeropuertos[aerAver].getespaciosDisponibles() << " espacios disponibles.";
+                        break;
+                    }
+
+                    case '2': {
+                        cout << "El aeropuerto " << listaAeropuertos[aerAver].getnombre() << " está en " <<
+                             listaAeropuertos[aerAver].getubicacion() << ".";
+                        break;
+                    }
+
+                    case '3':{
+                        cout << "Se va a vaciar el aeropuerto, regresando sus espacios disponibles a su capacidad.";
+                        listaAeropuertos[aerAver].vaciarAeropuerto();
+                        break;
+                    }
+                    default:{
+                        cout << "Opción inválida" << endl;
+                    }
+                }
+
                 break;
             }
 
