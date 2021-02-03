@@ -19,7 +19,7 @@ int main() {
 
         cout << "Le damos la bienvenida, eliga la opción deseada" << endl << "0. Registrar aeropuerto" << endl
         <<"1. Registrar vuelo" << endl <<"2. Ver espacios en aeropuerto" << endl << "3. Reservar asiento" << endl
-        << "4. Volar" << endl << "5. Salir" << endl << "Opción: ";
+        << "4. Información de un vuelo" << endl << "5. Salir" << endl << "Opción: ";
 
         cin >> option;
 
@@ -51,8 +51,8 @@ int main() {
             }
 
             case '4': {
-                // Esta opción le permite al usuario quitar el avión de la salida, y ponerlo en el Aeropuerto de destino
-                cout << "Volar" << endl;
+                // Muestra la información del vuelo seleccionado
+                cout << "Info vuelo" << endl;
                 break;
             }
 
