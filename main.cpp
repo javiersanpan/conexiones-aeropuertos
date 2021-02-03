@@ -104,13 +104,8 @@ int main() {
                     cout << "Este aeropuerto ya no tiene espacios disponibles";
                     break;
                 }
-                int nuevosEspaciosDisp;
 
-                nuevosEspaciosDisp = listaAeropuertos[elCodigoDe].getespaciosDisponibles();
-
-                nuevosEspaciosDisp = nuevosEspaciosDisp - 1;
-
-                listaAeropuertos[elCodigoDe].setespaciosDisponibles(nuevosEspaciosDisp);
+                listaAeropuertos[elCodigoDe].setespaciosDisponibles(listaAeropuertos[elCodigoDe].getespaciosDisponibles() -1);
 
                 listaVuelos[vueloActual].setSalida(listaAeropuertos[elCodigoDe]);
 
@@ -251,6 +246,8 @@ int main() {
                 cout << "¿Qué desea hacer?" << endl << "1. Ver número de vuelo" << endl << "2. Consultar destino y salida"
                 << endl << "3. Ver hora de salida" << "4. Cambiar nombre y clase de un boleto" << endl
                 << "5. Consultar asientos disponibles" << endl;
+
+                cin >> newOptionD;
 
                 switch (newOptionD) {
                     case '1':{
