@@ -9,6 +9,7 @@ using namespace std;
 
 #include "Aeropuerto.h"
 #include "Vuelo.h"
+#include "Boleto.h"
 
 int main() {
 
@@ -69,7 +70,7 @@ int main() {
 
                 break;
             }
-            
+
             case '1': {
                 // Esta opción le muestra al usuario registrar un vuelo
                 cout << "Registar vuelo" << endl;
