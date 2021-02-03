@@ -17,23 +17,30 @@ int main() {
 
     do {
 
-        cout << "Le damos la bienvenida, eliga la opción deseada" << endl << "1. Ver espacios disponibles" << endl <<
-             "2. Cambiar vuelo" << endl << "3. Reservar asiento" << endl << "4. Crear vuelo" << endl << "5. Salir" <<
-             endl << "Opción: ";
+        cout << "Le damos la bienvenida, eliga la opción deseada" << endl << "0. Registrar aeropuerto" << endl
+        <<"1. Registrar vuelo" << endl <<"2. Ver espacios en aeropuerto" << endl << "3. Reservar asiento" << endl
+        << "4. Volar" << endl << "5. Salir" << endl << "Opción: ";
 
         cin >> option;
 
         switch (option) {
 
+            case '0': {
+                // Esta opción le muestra al usuario registrar un aeropuerto
+                cout << "Registrar aeropuerto" << endl;
+                break;
+            }
+
+
             case '1': {
-                // Esta opción le muestra al usuario cuantos espacios disponibles hay a determinada hora
-                cout << "Ver espacios disponibles" << endl;
+                // Esta opción le muestra al usuario registrar un vuelo
+                cout << "Registar vuelo" << endl;
                 break;
             }
 
             case '2': {
-                // Esta opción le permite al usuario cambiar el horario del vuelo
-                cout << "Cambiar vuelo" << endl;
+                // Esta opción le permite al usuario ver los espacios que quedan en un Aeropuerto
+                cout << "Ver espacios en aeropuerto" << endl;
                 break;
             }
 
@@ -44,8 +51,8 @@ int main() {
             }
 
             case '4': {
-                // Esta opción le permite al usuario crear un nuevo vuelo
-                cout << "Crear vuelo" << endl;
+                // Esta opción le permite al usuario quitar el avión de la salida, y ponerlo en el Aeropuerto de destino
+                cout << "Volar" << endl;
                 break;
             }
 
@@ -71,8 +78,6 @@ int main() {
         }
 
     } while (option != '5');
-
-
 
     return 0;
 }
